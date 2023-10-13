@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      SSH_KEY: ${{ secrets.SSH_KEY }}    
+      TF_VAR_SSH_KEY: ${{ secrets.SSH_KEY }}    
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
