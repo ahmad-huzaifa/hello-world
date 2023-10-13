@@ -2,7 +2,7 @@ resource "ssh_resource" "ssh_host" {
 
   host        = "ec2-54-204-157-249.compute-1.amazonaws.com"
   user        = "ubuntu"
-  private_key = file("eksctl-vm-key.pem")
+  private_key = file("./eksctl-vm-key.pem")
 
   timeout     = "15m"
   retry_delay = "5s"
