@@ -21,5 +21,3 @@ terraform {
     }
   }
 }
-
-variable "SSH_KEY" {}
